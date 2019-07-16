@@ -8,8 +8,14 @@ services:
             - ASPNETCORE_ENVIRONMENT=Staging
         ports:
             - "9901:80"
-        volumes:
-            - "./Host-Logs:/app/App_Data/Logs"
+        depends_on:
+            - db
+
+    db:
+        image: "mcr.microsoft.com/mssql/server"
+        environment:
+            SA_PASSWORD: "P@ssw0rd"
+            ACCEPT_EULA: "Y"
 
     abp_ng:
         image: abp/ng

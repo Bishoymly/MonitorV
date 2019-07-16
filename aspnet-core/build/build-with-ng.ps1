@@ -25,12 +25,12 @@ dotnet publish --output (Join-Path $outputFolder "Host")
 
 Set-Location $ngFolder
 & yarn
-& ng build -prod
+& ng build --prod="true"
 Copy-Item (Join-Path $ngFolder "dist") (Join-Path $outputFolder "ng") -Recurse
 Copy-Item (Join-Path $ngFolder "Dockerfile") (Join-Path $outputFolder "ng")
 
 # Change UI configuration
-$ngConfigPath = Join-Path $outputFolder "ng/assets/appconfig.json"
+$ngConfigPath = Join-Path $outputFolder "ng/assets/appconfig.production.json"
 (Get-Content $ngConfigPath) -replace "21021", "9901" | Set-Content $ngConfigPath
 (Get-Content $ngConfigPath) -replace "4200", "9902" | Set-Content $ngConfigPath
 
