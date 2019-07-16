@@ -16,7 +16,7 @@ namespace MonitorV.Migrator
 
         public MonitorVMigratorModule(MonitorVEntityFrameworkModule abpProjectNameEntityFrameworkModule)
         {
-            abpProjectNameEntityFrameworkModule.SkipDbSeed = true;
+            abpProjectNameEntityFrameworkModule.SkipDbSeed = false;
 
             _appConfiguration = AppConfigurations.Get(
                 typeof(MonitorVMigratorModule).GetAssembly().GetDirectoryPathOrNull()

@@ -43,6 +43,8 @@ namespace MonitorV.EntityFrameworkCore
         {
             if (!SkipDbSeed)
             {
+                var migrator = IocManager.Resolve<AbpZeroDbMigrator>();
+                migrator.CreateOrMigrateForHost();
                 SeedHelper.SeedHostDb(IocManager);
             }
         }

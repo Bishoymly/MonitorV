@@ -7,3 +7,4 @@ bin/
 aspnet-core/src/MonitorV.Web.Host/App_Data/Logs/
 aspnet-core/src/MonitorV.Web.Mvc/App_Data/Logs/
 aspnet-core/src/MonitorV.Migrator/Logs/Logs.txt
+/aspnet-core/build/outputs
