@@ -1,33 +1,12 @@
-# Introduction
+# Prerequesits
+## To Build
+- nodejs: https://nodejs.org/en/download/
+- yarn: https://yarnpkg.com/lang/en/docs/install/
+- dotnet core sdk 2.2.106: https://dotnet.microsoft.com/download/dotnet-core/2.2
+- angular cli: ``` npm install -g @angular/cli```
+- docker (optional - to build docker images or run prebuilt images without sql server)
+- SQL Server (optional - only needed to run without docker)
 
-This is a template to create **ASP.NET Core MVC / Angular** based startup projects for [ASP.NET Boilerplate](https://aspnetboilerplate.com/Pages/Documents). It has 2 different versions:
+## To Run using prebuilt docker images
+- docker
 
-1. [ASP.NET Core MVC & jQuery](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Core) (server rendered multi-page application).
-2. [ASP.NET Core & Angular](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular) (single page application).
- 
-User Interface is based on [BSB Admin theme](https://github.com/gurayyarar/AdminBSBMaterialDesign).
- 
-# Download
-
-Create & download your project from https://aspnetboilerplate.com/Templates
-
-# Screenshots
-
-#### Sample Dashboard Page
-![](_screenshots/module-zero-core-template-ui-home.png)
-
-#### User Creation Modal
-![](_screenshots/module-zero-core-template-ui-user-create-modal.png)
-
-#### Login Page
-
-![](_screenshots/module-zero-core-template-ui-login.png)
-
-# Documentation
-
-* [ASP.NET Core MVC & jQuery version.](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Core)
-* [ASP.NET Core & Angular  version.](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular)
-
-# License
-
-[MIT](LICENSE).
