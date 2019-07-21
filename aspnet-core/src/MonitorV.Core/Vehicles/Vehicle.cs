@@ -9,7 +9,7 @@ using System.Text;
 
 namespace MonitorV.Vehicles
 {
-    public class Vehicle : Entity<string>, IAggregateRoot<string>
+    public class Vehicle : Entity<string>
     {
         [Required]
         public string RegistrationNumber { get; set; }
@@ -19,7 +19,11 @@ namespace MonitorV.Vehicles
 
         public DateTime? LastStatusUpdate { get; set; } = null;
         
-        [NotMapped]
-        public ICollection<IEventData> DomainEvents { get; set; } = new Collection<IEventData>();
+        public VehicleStatus UpdateStatus()
+        {
+            var timestamp = DateTime.Now;
+            this.LastStatusUpdate = timestamp;
+            return new VehicleStatus { Id = Guid.NewGuid(), StatusUpdateTimeStamp = timestamp, Vehicle = this };
+        }
     }
 }

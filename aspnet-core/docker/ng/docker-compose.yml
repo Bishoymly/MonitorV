@@ -3,7 +3,7 @@ version: '2'
 services:
 
     abp_host:
-        image: abp/host
+        image: bishoymly/host
         environment:
             - ASPNETCORE_ENVIRONMENT=Staging
         ports:
@@ -18,6 +18,9 @@ services:
             ACCEPT_EULA: "Y"
 
     abp_ng:
-        image: abp/ng
+        image: bishoymly/ng
         ports:
             - "9902:80"
+
+    abp_simulator:
+        image: bishoymly/simulator

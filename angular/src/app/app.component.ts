@@ -21,10 +21,11 @@ export class AppComponent extends AppComponentBase implements OnInit, AfterViewI
         SignalRAspNetCoreHelper.initSignalR();
 
         abp.event.on('abp.notifications.received', userNotification => {
-            abp.notifications.showUiNotifyForUserNotification(userNotification);
+            console.log(userNotification);
+            //abp.notifications.showUiNotifyForUserNotification(userNotification);
 
             // Desktop notification
-            Push.create('AbpZeroTemplate', {
+            /*Push.create('AbpZeroTemplate', {
                 body: userNotification.notification.data.message,
                 icon: abp.appPath + 'assets/app-logo-small.png',
                 timeout: 6000,
@@ -32,7 +33,7 @@ export class AppComponent extends AppComponentBase implements OnInit, AfterViewI
                     window.focus();
                     this.close();
                 }
-            });
+            });*/
         });
     }
 
