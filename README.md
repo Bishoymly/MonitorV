@@ -1,4 +1,4 @@
-# Prerequesits
+# Prerequisites
 ## To Build
 - nodejs: https://nodejs.org/en/download/
 - yarn: https://yarnpkg.com/lang/en/docs/install/
