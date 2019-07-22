@@ -11,6 +11,7 @@ using Abp.Zero.Configuration;
 using Abp.Zero.EntityFrameworkCore;
 using MonitorV.EntityFrameworkCore;
 using MonitorV.Tests.DependencyInjection;
+using Abp.Notifications;
 
 namespace MonitorV.Tests
 {

@@ -38,7 +38,7 @@ namespace MonitorV.Vehicles
             if (AbpSession.UserId != null)
             {
                 var user = new UserIdentifier(AbpSession.TenantId, AbpSession.UserId.Value);
-                SubscriptionManager.Subscribe(user, "VehicleStatusUpdate");
+                SubscriptionManager.SubscribeAsync(user, "VehicleStatusUpdate").Wait();
             }
 
             return query;
