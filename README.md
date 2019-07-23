@@ -1,6 +1,8 @@
 This is a sample scenario that simulates vehicles updating their status in a realtime dashboard.
 
-# Deployment Steps
+Please check the documentations for [Architecture Overview](docs/architecture.md)
+
+# Getting started
 ## To Run using prebuilt docker images
 1. First make sure docker is installed 
 2. Download the file: https://raw.githubusercontent.com/Bishoymly/MonitorV/master/aspnet-core/docker/ng/docker-compose.yml
