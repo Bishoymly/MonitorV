@@ -38,6 +38,7 @@ Set-Location $ngFolder
 & ng build --prod="true"
 Copy-Item (Join-Path $ngFolder "dist") (Join-Path $outputFolder "ng") -Recurse
 Copy-Item (Join-Path $ngFolder "Dockerfile") (Join-Path $outputFolder "ng")
+Copy-Item (Join-Path $ngFolder "default.conf") (Join-Path $outputFolder "ng")
 
 # Change UI configuration
 $ngConfigPath = Join-Path $outputFolder "ng/assets/appconfig.production.json"
