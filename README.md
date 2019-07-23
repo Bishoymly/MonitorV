@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/bishoylabib/MonitorV/_apis/build/status/Bishoymly.MonitorV?branchName=master)](https://dev.azure.com/bishoylabib/MonitorV/_build/latest?definitionId=3&branchName=master)
+
 This is a sample scenario that simulates vehicles updating their status in a realtime dashboard.
 
 Please check the documentations for [Architecture Overview](docs/architecture.md)
